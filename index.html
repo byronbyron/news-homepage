@@ -13,47 +13,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="./dist/app.js" defer></script>
 </head>
-<body class="antialiased">
+<body class="bg-off-white">
 
   <header>
     <nav>
-      <div class="flex items-center h-[88px] px-4 max-w-[375px] mx-auto">
+      <div class="flex items-center h-[88px] px-4">
         <a href="#" class="block">
           <img src="./assets/images/logo.svg" alt="W" class="block w-[45px] h-[28px]">
         </a>
 
-        <button type="button" class="ml-auto h-12 w-10">
-          <img src="./assets/images/icon-menu.svg" alt="">
-        </button>
+        <button type="button" class="ml-auto h-12 w-10 js-menu menu-open-btn"><span class="sr-only">Open Menu</span><img src="./assets/images/icon-menu.svg" alt=""></button>
       </div>
 
-      <div class="absolute top-0 left-full hidden">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
+      <div class="menu fixed top-0 bottom-0 right-0 z-50 bg-off-white w-[68%] translate-x-full transition">
+        <button type="button" class="absolute top-4 right-2 p-3 js-menu"><span class="sr-only">Close Menu</span><img src="./assets/images/icon-menu-close.svg" alt=""></button>
+
+        <ul class="text-lg mt-36 ml-6 flex flex-col gap-y-5">
+          <li><a href="#" class="text-very-dark-blue">Home</a></li>
+          <li><a href="#" class="text-very-dark-blue">New</a></li>
+          <li><a href="#" class="text-very-dark-blue">Popular</a></li>
+          <li><a href="#" class="text-very-dark-blue">Trending</a></li>
+          <li><a href="#" class="text-very-dark-blue">Categories</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main>
-    <div class="px-4 max-w-[375px] mx-auto">
+    <div class="px-4">
       <div class="flex flex-col gap-y-6 mb-16">
         <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3" class="block">
 
-        <h1 class="text-[2.75rem] leading-none font-extrabold">The Bright Future of Web 3.0?</h1>
+        <h1 class="text-[2.5rem] leading-none font-extrabold">The Bright Future of Web 3.0?</h1>
 
         <p class="text-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
 
         <a href="#" class="inline-block p-3.5 w-[185px] text-center bg-soft-red hover:bg-very-dark-blue focus:bg-very-dark-blue transition text-off-white text-sm font-bold uppercase tracking-widest">Read more</a>
       </div>
 
-      <div class="bg-very-dark-blue text-white p-5 mb-16">
+      <div class="bg-very-dark-blue text-off-white p-5 mb-16">
         <h2 class="text-3xl text-soft-orange font-bold mb-7">New</h2>
 
         <ul>
@@ -131,6 +132,5 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
-
 </body>
 </html>
