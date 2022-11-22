@@ -19,33 +19,36 @@
 <body class="bg-off-white">
 
   <header>
-    <nav>
-      <div class="flex items-center h-[88px] px-4">
+    <nav class="lg:px-4 lg:max-w-[960px] xl:max-w-[1142px] lg:mx-auto lg:flex lg:items-center lg:h-[150px] lg:mt-[35px]">
+      <div class="flex items-center h-[88px] lg:h-[100px] px-4 max-w-[375px] sm:max-w-[540px] md:max-w-[720px] mx-auto lg:p-0 lg:ml-0 lg:h-auto">
         <a href="#" class="block">
-          <img src="./assets/images/logo.svg" alt="W" class="block w-[45px] h-[28px]">
+          <img src="./assets/images/logo.svg" alt="W" class="block w-[45px] h-[28px] lg:w-[65px] lg:h-[40px]">
         </a>
 
-        <button type="button" class="ml-auto h-12 w-10 js-menu menu-open-btn"><span class="sr-only">Open Menu</span><img src="./assets/images/icon-menu.svg" alt=""></button>
+        <button type="button" class="ml-auto h-12 w-10 js-menu menu-open-btn lg:hidden"><span class="sr-only">Open Menu</span><img src="./assets/images/icon-menu.svg" alt=""></button>
       </div>
 
-      <div class="menu fixed top-0 bottom-0 right-0 z-50 bg-off-white w-[68%] translate-x-full transition">
-        <button type="button" class="absolute top-4 right-2 p-3 js-menu"><span class="sr-only">Close Menu</span><img src="./assets/images/icon-menu-close.svg" alt=""></button>
+      <div class="menu fixed top-0 bottom-0 right-0 z-50 bg-off-white w-[68%] translate-x-full transition lg:static lg:w-auto lg:!translate-x-0">
+        <button type="button" class="absolute top-4 right-2 p-3 lg:hidden js-menu"><span class="sr-only">Close Menu</span><img src="./assets/images/icon-menu-close.svg" alt=""></button>
 
-        <ul class="text-lg mt-36 ml-6 flex flex-col gap-y-5">
-          <li><a href="#" class="text-very-dark-blue">Home</a></li>
-          <li><a href="#" class="text-very-dark-blue">New</a></li>
-          <li><a href="#" class="text-very-dark-blue">Popular</a></li>
-          <li><a href="#" class="text-very-dark-blue">Trending</a></li>
-          <li><a href="#" class="text-very-dark-blue">Categories</a></li>
+        <ul class="text-lg mt-36 ml-6 flex flex-col gap-y-5 lg:text-base lg:mt-0 lg:ml-0 lg:flex-row lg:gap-y-0 lg:gap-x-10">
+          <li><a href="#" class="text-very-dark-blue lg:text-dark-grayish-blue">Home</a></li>
+          <li><a href="#" class="text-very-dark-blue lg:text-dark-grayish-blue">New</a></li>
+          <li><a href="#" class="text-very-dark-blue lg:text-dark-grayish-blue">Popular</a></li>
+          <li><a href="#" class="text-very-dark-blue lg:text-dark-grayish-blue">Trending</a></li>
+          <li><a href="#" class="text-very-dark-blue lg:text-dark-grayish-blue">Categories</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main>
-    <div class="px-4">
+    <div class="px-4 max-w-[375px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1142px] mx-auto lg:grid">
       <div class="flex flex-col gap-y-6 mb-16">
-        <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3" class="block">
+        <picture>
+          <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3" class="block">
+        </picture>
 
         <h1 class="text-[2.5rem] leading-none font-extrabold">The Bright Future of Web 3.0?</h1>
 
