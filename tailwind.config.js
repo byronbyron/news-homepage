@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
       },
+      lineHeight: {
+        'relaxed': '1.7',
+      },
       colors: {
         'soft-orange': 'hsl(35, 77%, 62%)',
         'soft-red': 'hsl(5, 85%, 63%)',

@@ -44,51 +44,57 @@
 
   <main>
     <div class="px-4 max-w-[375px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1142px] mx-auto lg:grid">
-      <div class="flex flex-col gap-y-6 mb-16">
-        <picture>
-          <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)">
-          <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3" class="block">
-        </picture>
+      <div class="lg:flex lg:gap-x-8">
+        <div class="flex flex-col gap-y-6 mb-16 lg:gap-y-10">
+          <picture>
+            <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3" class="block">
+          </picture>
 
-        <h1 class="text-[2.5rem] leading-none font-extrabold">The Bright Future of Web 3.0?</h1>
+          <div class="flex flex-col gap-y-6 lg:flex-row lg:gap-x-8">
+            <h1 class="text-[2.5rem] xl:text-[3.375rem] leading-none font-extrabold lg:flex-1">The Bright Future of Web 3.0?</h1>
 
-        <p class="text-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <div class="flex flex-col gap-y-6 lg:flex-1 lg:gap-y-10">
+              <p class="text-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
 
-        <a href="#" class="inline-block p-3.5 w-[185px] text-center bg-soft-red hover:bg-very-dark-blue focus:bg-very-dark-blue transition text-off-white text-sm font-bold uppercase tracking-widest">Read more</a>
-      </div>
+              <a href="#" class="inline-block p-3.5 w-[185px] text-center bg-soft-red hover:bg-very-dark-blue focus:bg-very-dark-blue transition text-off-white text-sm font-bold uppercase tracking-widest">Read more</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="bg-very-dark-blue text-off-white p-5 mb-16">
-        <h2 class="text-3xl text-soft-orange font-bold mb-7">New</h2>
+        <div class="bg-very-dark-blue text-off-white p-5 xl:px-6 xl:pt-[2.125rem] mb-16 xl:min-w-[350px]">
+          <h2 class="text-3xl xl:text-[2.5rem] text-soft-orange font-bold mb-7 xl:mb-8">New</h2>
 
-        <ul>
-          <li class="pb-8 mb-8 border-b border-grayish-blue/60">
-            <a href="#" class="block group">
-              <h3 class="text-xl font-bold mb-2 group-hover:text-soft-orange group-focus:text-soft-orange transition">Hydrogen VS Electric Cars</h3>
-              <p class="leading-normal text-grayish-blue font-light mr-3">Will hydrogen-fueled cars ever catch up to EVs?</p>
-            </a>
-          </li>
+          <ul>
+            <li class="pb-[1.875rem] mb-7 border-b border-grayish-blue/60">
+              <a href="#" class="block group">
+                <h3 class="text-xl font-bold mb-2 text-off-white group-hover:text-soft-orange group-focus:text-soft-orange transition">Hydrogen VS Electric Cars</h3>
+                <p class="text-[0.9375rem] leading-relaxed text-grayish-blue/80 font-light mr-3">Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </a>
+            </li>
 
-          <li class="pb-8 mb-8 border-b border-grayish-blue/60">
-            <a href="#" class="block group">
-              <h3 class="text-xl font-bold mb-2 group-hover:text-soft-orange group-focus:text-soft-orange transition">The Downsides of AI Artistry</h3>
-              <p class="leading-normal text-grayish-blue font-light mr-3">What are the possible adverse effects of on-demand AI image generation?</p>
-            </a>
-          </li>
+            <li class="pb-[1.875rem] mb-7 border-b border-grayish-blue/60">
+              <a href="#" class="block group">
+                <h3 class="text-xl font-bold mb-2 text-off-white group-hover:text-soft-orange group-focus:text-soft-orange transition">The Downsides of AI Artistry</h3>
+                <p class="text-[0.9375rem] leading-relaxed text-grayish-blue/80 font-light mr-3">What are the possible adverse effects of on-demand AI image generation?</p>
+              </a>
+            </li>
 
-          <li>
-            <a href="#" class="block group">
-              <h3 class="text-xl font-bold mb-2 group-hover:text-soft-orange group-focus:text-soft-orange transition">Is VC Funding Drying Up?</h3>
-              <p class="leading-normal text-grayish-blue font-light mr-3">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-            </a>
-          </li>
-        </ul>
+            <li>
+              <a href="#" class="block group">
+                <h3 class="text-xl font-bold mb-2 text-off-white group-hover:text-soft-orange group-focus:text-soft-orange transition">Is VC Funding Drying Up?</h3>
+                <p class="text-[0.9375rem] leading-relaxed text-grayish-blue/80 font-light mr-3">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="mb-16">
         <h2 class="sr-only">Blog</h2>
 
-        <ol>
-          <li class="mb-8">
+        <ol class="lg:flex lg:gap-x-6">
+          <li class="mb-8 lg:flex-1">
             <a href="#" class="flex group">
               <div class="mr-6">
                 <img src="./assets/images/image-retro-pcs.jpg" alt="retro pcs" class="max-w-[100px]" width="100" height="127">
@@ -101,7 +107,7 @@
             </a>
           </li>
 
-          <li class="mb-8">
+          <li class="mb-8 lg:flex-1">
             <a href="#" class="flex group">
               <div class="mr-6">
                 <img src="./assets/images/image-top-laptops.jpg" alt="top laptops" class="max-w-[100px]" width="100" height="127">
@@ -114,7 +120,7 @@
             </a>
           </li>
 
-          <li class="mb-8">
+          <li class="mb-8 lg:flex-1">
             <a href="#" class="flex group">
               <div class="mr-6">
                 <img src="./assets/images/image-gaming-growth.jpg" alt="gaming growth" class="max-w-[100px]" width="100" height="127">
